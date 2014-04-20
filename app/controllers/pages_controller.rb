@@ -4,4 +4,10 @@ class PagesController < ApplicationController
 
   def about
   end
+
+  def barcelonaflight
+  end
+
+  def JamesBarcelonaFlight
+  end
 end

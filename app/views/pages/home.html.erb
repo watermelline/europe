@@ -1,11 +1,208 @@
+
 <div class="jumbotron center">
-	<h1>Welcome to my App</h1>
-	<% if user_signed_in? %>
-		Member Session Area
-	<% else %>
-		<p>
-			<%= link_to "Log In",new_user_session_path, class: "btn btn-default btn-lg" %>
-			<%= link_to "Sign Up",new_user_registration_path, class: "btn btn-primary btn-lg" %>
-		</p>
-	<% end %>
+	<h1 class="HL">Spain and France</h1>
+
+		<h3 class="HL">Here we come!</h3>
+
+</div>
+
+<div class="panel panel-default"> 
+	<div class="panel-heading center">
+		<h3>Barcelona</h3>
+	</div>
+
+	<div class="table-responsive">
+		<table class = "table table-hover">
+
+			<tr style="text-align:center">
+				<th class = "col-sm-2" >Date</th>
+				<th class = "col-sm-2" >Location</th>
+				<th class = "col-sm-8" >Itinerary</th>
+			</tr>
+
+			<tr>
+				<td>
+					<b>June 21</b><br>
+					Day 0<br>
+					Saturday
+				</td>
+				<td><%= link_to "7:50am SFO", barcelonaflight_path %><br>
+					</td>
+				<td>
+					<table>
+						<tr>
+							<td class="col-sm-4">
+								<p>Jenny:<br>
+									7:50am Flight from SFO<br>
+									10:25pm Flight from DC (IAD)<br>
+								<%= link_to "Jenny's Flight Info", barcelonaflight_path %></p>
+							</td>
+							<td class="col-sm-4">
+								<p>James:<br>
+									8:25am Flight from SFO (T1)<br>
+									6:45pm Flight from PHL<br>
+								<%= link_to "James' Flight Info", jamesbarcelonaflight_path %></p>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+
+			<tr>
+				<td><b>June 22</b><br>Day 1<br>Sunday</td>
+				<td>Barcelona</td>
+				<td>
+					<table>
+						<tr>
+							<td class="col-sm-4">
+								<p>Jenny:<br>
+									1:10pm Flight from Brussels<br>
+								<%= link_to "Jenny's Flight Info", barcelonaflight_path %><br>
+								Jenny arrives in Barcelona at 3:10pm</p>
+							</td>
+							<td class="col-sm-4">
+								<p>James arrives in Barcelona at 8:45am</p>
+								<p style="border: 1px dashed #464646;" align="center"><a href="http://www.tripadvisor.com/Hotel_Review-g187497-d190635-Reviews-Hotel_Arts_Barcelona-Barcelona_Catalonia.html">Hotel Arts</a> - Marina 19 - 21, 08005 Barcelona, Spain (800-542-8680)</p>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+
+			<tr>
+				<td><b>June 23</b><br>Day 2<br>Monday</td>
+				<td>[TBD]</td>
+				<td>[TBD]</td>
+			</tr>
+
+			<tr>
+				<td><b>June 24</b><br>Day 3<br>Tuesday</td>
+				<td>[TBD]</td>
+				<td>[TBD]</td>
+			</tr>
+
+			<tr>
+				<td><b>June 25</b><br>Day 4<br>Wednesday</td>
+				<td>[TBD]</td>
+				<td>[TBD]</td>
+			</tr>
+			<tr>
+				<td><b>June 26</b><br>Day 5<br>Thursday</td>
+				<td>[TBD]</td>
+				<td>[TBD]</td>
+			</tr>
+			<tr>
+				<td><b>June 27</b><br>Day 6<br>Friday</td>
+				<td>[TBD]</td>
+				<td>[TBD]</td>
+			</tr>
+
+		</table>
+
+	</div>
+
+
+</div>
+
+
+<div class="panel panel-default"> 
+	<div class="panel-heading center">
+		<h3>Paris</h3>
+	</div>
+
+	<div class="table-responsive">
+		<table class = "table table-hover">
+
+			<tr style="text-align:center">
+				<th class = "col-sm-2" >Date</th>
+				<th class = "col-sm-2" >Location</th>
+				<th class = "col-sm-8" >Itinerary</th>
+			</tr>
+
+			<tr>
+				<td>
+					<b>June 27</b><br>
+					Day 6<br>
+					Friday
+				</td>
+				<td>
+					tbd
+					</td>
+				<td>
+				</td>
+			</tr>
+
+			<tr>
+				<td><b>June 28</b><br>Day 7(1)<br>Saturday</td>
+				<td>Paris</td>
+				<td>
+				tbd
+				</td>
+			</tr>
+
+			<tr>
+				<td><b>June 29</b><br>Day 8(2)<br>Sunday</td>
+				<td>[TBD]</td>
+				<td>[TBD]</td>
+			</tr>
+
+			<tr>
+				<td><b>June 30</b><br>Day 9(3)<br>Monday</td>
+				<td>[TBD]</td>
+				<td>[TBD]</td>
+			</tr>
+
+			<tr>
+				<td><b>July 1</b><br>Day 10(4)<br>Tuesday</td>
+				<td>[TBD]</td>
+				<td>[TBD]</td>
+			</tr>
+			<tr>
+				<td><b>July 2</b><br>Day 11(5)<br>Wednesday</td>
+				<td>[TBD]</td>
+				<td>[TBD]</td>
+			</tr>
+			<tr>
+				<td><b>July 3</b><br>Day 12(6)<br>Thursday</td>
+				<td>[TBD]</td>
+				<td>[TBD]</td>
+			</tr>
+
+			<tr>
+				<td><b>July 4</b><br>Day 13(7)<br>Friday</td>
+				<td>[TBD]</td>
+				<td>[TBD]</td>
+			</tr>
+
+			<tr>
+				<td><b>July 5</b><br>Day 14(8)<br>Saturday</td>
+				<td>[TBD]</td>
+				<td>[TBD]</td>
+			</tr>
+
+			<tr>
+				<td><b>July 6</b><br>Day 15(9)<br>Sunday</td>
+				<td>Barcelona/Barcelona Airport</td>
+				<td>
+					<table>
+						<tr>
+							<td class="col-sm-4">
+								<p>Jenny:<br>
+									1:10pm Flight from Barcelona<br>
+									4:00pm Flight from Toronto<br>
+								<%= link_to "Jenny's Flight Info", barcelonaflight_path %></p>
+							</td>
+							<td class="col-sm-4">
+								<p>James:<br>
+									[TBD]<br>
+								<%= link_to "James' Flight Info", jamesbarcelonaflight_path %></p>
+							</td>
+						</tr>
+					</table></td>
+			</tr>
+
+		</table>
+
+	</div>
+
 </div>

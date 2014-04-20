@@ -1,6 +1,6 @@
-#One Month Rails
+#European Vacation
 
-This is the Pinteresting sample applicatio for [*One Month Rails*])(http://onemonthrails.com)
+Just putting some stuff together
 
 by [Jenny Wu](wutail.com)
 
