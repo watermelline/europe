@@ -1,6 +1,6 @@
 #European Vacation
 
-Just putting some stuff together
+Itinerary.
 
 by [Jenny Wu](wutail.com)
 
