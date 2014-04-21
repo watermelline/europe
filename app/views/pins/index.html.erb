@@ -1,4 +1,13 @@
-<h1>Listing pins</h1>
+<div class="jumbotron center">
+  
+  <h1 class="HL">Spain and France</h1>
+
+    <h3 class="HL">Here we come!</h3>
+
+</div>
+
+
+<h1>Itinerary</h1>
 
 <table>
   <thead>
@@ -11,6 +20,7 @@
   <tbody>
     <% @pins.each do |pin| %>
       <tr>
+
         <td><%= pin.description %></td>
         <td><%= link_to 'Show', pin %></td>
         <td><%= link_to 'Edit', edit_pin_path(pin) %></td>

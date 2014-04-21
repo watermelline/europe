@@ -8,6 +8,6 @@ class PagesController < ApplicationController
   def barcelonaflight
   end
 
-  def JamesBarcelonaFlight
+  def jamesbarcelonaflight
   end
 end
