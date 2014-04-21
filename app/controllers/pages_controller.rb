@@ -10,4 +10,8 @@ class PagesController < ApplicationController
 
   def jamesbarcelonaflight
   end
+
+  def bordeauxflight
+  end
+
 end

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @itinerary.date %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @itinerary.location %>
+</p>
+
+<p>
+  <strong>Details:</strong>
+  <%= @itinerary.details %>
+</p>
+
+<%= link_to 'Edit', edit_itinerary_path(@itinerary) %> |
+<%= link_to 'Back', itineraries_path %>
