@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140421054524) do
+ActiveRecord::Schema.define(version: 20140425052510) do
 
   create_table "itineraries", force: true do |t|
     t.string   "date"
@@ -19,6 +19,8 @@ ActiveRecord::Schema.define(version: 20140421054524) do
     t.text     "details"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "day"
+    t.string   "weekday"
   end
 
   create_table "pins", force: true do |t|

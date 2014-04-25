@@ -1,29 +1,138 @@
-<h1>Listing itineraries</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Date</th>
-      <th>Location</th>
-      <th>Details</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<%= render 'pages/home' %>
 
-  <tbody>
-    <% @itineraries.each do |itinerary| %>
-      <tr>
-        <td><%= itinerary.date %></td>
-        <td><%= itinerary.location %></td>
-        <td><%= itinerary.details %></td>
-        <td><%= link_to 'Show', itinerary %></td>
-        <td><%= link_to 'Edit', edit_itinerary_path(itinerary) %></td>
-        <td><%= link_to 'Destroy', itinerary, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  <%= link_to 'New Itinerary', new_itinerary_path %>
+
+  <div class="panel panel-default"> 
+    <div class="panel-heading center">
+      <h3>Barcelona</h3>
+      <%= link_to 'New Itinerary', new_itinerary_path %>
+    </div>
+
+  <div class="table-responsive"> 
+
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th class="col-sm-2">Date</th>
+          <th class="col-sm-2">Location</th>
+          <th class="col-sm-8">Details</th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @itineraries.each do |itinerary| %>
+          <tr>
+            <td>
+              <p><%= itinerary.date %></p>
+              <p><%= itinerary.day %></p>
+              <p><%= itinerary.weekday %></p>
+            </td>
+            <td><%= itinerary.location %></td>
+            <td><%= itinerary.details %></td>
+            <td><%= link_to 'Show', itinerary %></td>
+            <td><%= link_to 'Edit', edit_itinerary_path(itinerary) %></td>
+            <td><%= link_to 'Delete', itinerary, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+
+
+<!--
+
+      <tr style="text-align:center">
+        <th class = "col-sm-2" >Date</th>
+        <th class = "col-sm-2" >Location</th>
+        <th class = "col-sm-8" >Itinerary</th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
 
-<br>
+      <tr>
+        <td>
+          <b>June 21</b><br>
+          Day 0<br>
+          Saturday
+        </td>
+        <td><%= link_to "7:50am SFO", barcelonaflight_path %><br>
+          </td>
+        <td>
+          <table>
+            <tr>
+              <td class="col-sm-4">
+                <p>Jenny:<br>
+                  7:50am Flight from SFO<br>
+                  10:25pm Flight from DC (IAD)<br>
+                <%= link_to "Jenny's Flight Info", barcelonaflight_path %></p>
+              </td>
+              <td class="col-sm-4">
+                <p>James:<br>
+                  8:25am Flight from SFO (T1)<br>
+                  6:45pm Flight from PHL<br>
+                <%= link_to "James' Flight Info", jamesbarcelonaflight_path %></p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
 
-<%= link_to 'New Itinerary', new_itinerary_path %>
+      <tr>
+        <td><b>June 22</b><br>Day 1<br>Sunday</td>
+        <td>Barcelona</td>
+        <td>
+          <table>
+            <tr>
+              <td class="col-sm-4">
+                <p>Jenny:<br>
+                  1:10pm Flight from Brussels<br>
+                <%= link_to "Jenny's Flight Info", barcelonaflight_path %><br>
+                Jenny arrives in Barcelona at 3:10pm</p>
+              </td>
+              <td class="col-sm-4">
+                <p>James arrives in Barcelona at 8:45am</p>
+                <p style="border: 1px dashed #464646;" align="center"><a href="http://www.tripadvisor.com/Hotel_Review-g187497-d190635-Reviews-Hotel_Arts_Barcelona-Barcelona_Catalonia.html">Hotel Arts</a> - Marina 19 - 21, 08005 Barcelona, Spain (800-542-8680)</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td><b>June 23</b><br>Day 2<br>Monday</td>
+        <td>[TBD]</td>
+        <td>[TBD]</td>
+      </tr>
+
+      <tr>
+        <td><b>June 24</b><br>Day 3<br>Tuesday</td>
+        <td>[TBD]</td>
+        <td>[TBD]</td>
+      </tr>
+
+      <tr>
+        <td><b>June 25</b><br>Day 4<br>Wednesday</td>
+        <td>[TBD]</td>
+        <td>[TBD]</td>
+      </tr>
+      <tr>
+        <td><b>June 26</b><br>Day 5<br>Thursday</td>
+        <td>[TBD]</td>
+        <td>[TBD]</td>
+      </tr>
+      <tr>
+        <td><b>June 27</b><br>Day 6<br>Friday</td>
+        <td>[TBD]</td>
+        <td>[TBD]</td>
+      </tr>
+
+    </table>
+
+  </div>
+
+
+</div>
+-->
