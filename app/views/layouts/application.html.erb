@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<%= javascript_include_tag 'ckeditor/ckeditor.js' %>
   <title>Jenny James Vacation</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
+<script type="text/javascript">$(document).ready(function() {
+    if ($('textarea').length > 0) {
+        var data = $('textarea');
+        $.each(data, function(i) {
+            CKEDITOR.replace(data[i].id);
+        });
+    }
+});</script>
 <body>
 
 	<%= render 'layouts/header' %>

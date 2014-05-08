@@ -22,5 +22,7 @@ module Pinteresting
 
     #required for Heroku
     config.assets.initialize_on_precompile = false
+
+    config.autoload_paths += %W(#{config.root}/app/models/ckeditor)
   end
 end
