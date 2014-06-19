@@ -12,6 +12,9 @@ Rails.application.routes.draw do
   get "barcelonaflight"=> "pages#barcelonaflight"
   get "jamesbarcelonaflight" => "pages#jamesbarcelonaflight"
   get "bordeauxflight" => "pages#bordeauxflight"
+  get "barcelonatoparis"=> "pages#barcelonatoparis"
+  get "parishotel"=> "parishotel"
+  get "loirevalleyhotel"=> "loirevalleyhotel"
 
 
   # The priority is based upon order of creation: first created -> highest priority.

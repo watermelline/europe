@@ -6,13 +6,13 @@
 
 </div>
 
-<div class="center">
+<!--<div class="center">
 	<p>
 		<%= link_to "Log In",new_user_session_path, class: "btn btn-default btn-lg" %>
 		<%= link_to "Sign Up",new_user_registration_path, class: "btn btn-primary btn-lg" %>
 	</p>
 </div>
-
+-->
 
 <div class="panel panel-default"> 
 	<div class="panel-heading center">
@@ -85,24 +85,29 @@
 
 			<tr>
 				<td><b>June 24</b><br>Day 3<br>Tuesday</td>
-				<td>[TBD]</td>
+				<td>Barcelona</td>
 				<td>[TBD]</td>
 			</tr>
 
 			<tr>
 				<td><b>June 25</b><br>Day 4<br>Wednesday</td>
-				<td>[TBD]</td>
+				<td>[Barcelona</td>
 				<td>[TBD]</td>
 			</tr>
 			<tr>
 				<td><b>June 26</b><br>Day 5<br>Thursday</td>
-				<td>[TBD]</td>
+				<td>Barcelona</td>
 				<td>[TBD]</td>
 			</tr>
 			<tr>
 				<td><b>June 27</b><br>Day 6<br>Friday</td>
-				<td>[TBD]</td>
-				<td>[TBD]</td>
+				<td>Barcelona</td>
+				<td>
+					<p>Flight to Paris: Barcelona Airport - Terminal 2C<br>
+					EasyJet: (3:55pm) 15:55 (Bag drop closes 3:15pm) <br>
+					Arrive Paris at 5:55pm<br>
+					<%= link_to "Flight Info", barcelonatoparis_path%></p>
+				</td>
 			</tr>
 
 		</table>
@@ -134,9 +139,13 @@
 					Friday
 				</td>
 				<td>
-					tbd
-					</td>
+					Paris
+				</td>
 				<td>
+					Hotel: Paris Marriott Hotel Champs-Elysees <br>
+					70 Avenue des Champs-Elysees<br>
+					France Phone: 33-1-5393 5500<br>
+					<%= link_to "Hotel Confirmation", parishotel_path %><br>
 				</td>
 			</tr>
 
@@ -144,7 +153,9 @@
 				<td><b>June 28</b><br>Day 7(1)<br>Saturday</td>
 				<td>Paris</td>
 				<td>
-				tbd
+				<b>New Paris Tour</b> <br>
+				11:00am<br>
+				Meeting: Fountain Place St. Michel<br>
 				</td>
 			</tr>
 
@@ -162,12 +173,23 @@
 
 			<tr>
 				<td><b>July 1</b><br>Day 10(4)<br>Tuesday</td>
-				<td>Valley</td>
-				<td>[TBD]</td>
+				<td>Loire Valley</td>
+				<td>
+					<p>
+						<b>Car Reservation: </b><br>
+						TBD
+					</p>
+
+
+					<b>Hotel: </b><br>
+					Chateau Bouvet Ladubay<br>
+					6 Avenue Georges Thoreau, Saint-Hilaire-Saint-Florent -Saumur, 49400, France<br>
+					France Phone: 33675527739 <br>
+					<%= link_to "Hotel Confirmation", loirevalleyhotel_path %><br></td>
 			</tr>
 			<tr>
 				<td><b>July 2</b><br>Day 11(5)<br>Wednesday</td>
-				<td>Valley/Bordeaux</td>
+				<td>Loire Valley/Bordeaux</td>
 				<td>[TBD]</td>
 			</tr>
 			<tr>
